@@ -17,4 +17,14 @@
             <segment bytes="4501" number="2">987654321fedbca@news.newzbin.com</segment>
         </segments>
     </file>
+    <file poster="Joe Bloggs &lt;bloggs@nowhere.example&gt;" date="1071674882" subject="Here's your file!  abc-mr2a.r02 (1/2)">
+        <groups>
+            <group>alt.binaries.newzbin</group>
+            <group>alt.binaries.mojo</group>
+        </groups>
+        <segments>
+            <segment bytes="102393" number="1">123456799abcdef@news.newzbin.com</segment>
+            <segment bytes="4502" number="2">987654329fedbca@news.newzbin.com</segment>
+        </segments>
+    </file>
 </nzb>

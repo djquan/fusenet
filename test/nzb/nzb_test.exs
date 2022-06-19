@@ -16,6 +16,12 @@ defmodule Fusenet.NzbTest do
       files: [
         %{
           subject: "Here's your file!  abc-mr2a.r01 (1/2)",
+          poster: "Joe Bloggs <bloggs@nowhere.example>",
+          date: "1071674882",
+          groups: [
+            "alt.binaries.newzbin",
+            "alt.binaries.mojo"
+          ],
           segments: [
             %{
               number: 1,
@@ -26,6 +32,27 @@ defmodule Fusenet.NzbTest do
               number: 2,
               bytes: 4501,
               path: "987654321fedbca@news.newzbin.com"
+            }
+          ]
+        },
+        %{
+          subject: "Here's your file!  abc-mr2a.r02 (1/2)",
+          poster: "Joe Bloggs <bloggs@nowhere.example>",
+          date: "1071674882",
+          groups: [
+            "alt.binaries.newzbin",
+            "alt.binaries.mojo"
+          ],
+          segments: [
+            %{
+              number: 1,
+              bytes: 102_393,
+              path: "123456799abcdef@news.newzbin.com"
+            },
+            %{
+              number: 2,
+              bytes: 4502,
+              path: "987654329fedbca@news.newzbin.com"
             }
           ]
         }

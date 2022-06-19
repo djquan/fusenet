@@ -27,11 +27,12 @@ defmodule Fusenet.Nzb do
             }
           end)
 
-        IO.inspect(segments)
-
         %{
           subject: li |> xpath(~x"./@subject"s),
-          segments: segments
+          poster: li |> xpath(~x"./@poster"s),
+          date: li |> xpath(~x"./@date"s),
+          segments: segments,
+          groups: li |> xpath(~x"groups/group/text()"ls)
         }
       end)
 
